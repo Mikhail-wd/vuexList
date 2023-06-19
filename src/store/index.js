@@ -5,7 +5,7 @@ import * as Vue from 'vue';
 export default new Vuex.Store({
     actions: {
         srtArray(ctx) {
-            if(localStorage.getItem("listArray") !== null){
+            if(localStorage.getItem("listArray") == null){
                 return
             } else {
             const arrayStore = JSON.parse(localStorage.getItem("listArray"));            
