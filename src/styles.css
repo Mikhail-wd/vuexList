@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    min-height: 900px;
+}
+
+.wrapper {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+footer,
+.content,
+header {
+    padding: 0;
+    width: 60%;
+    background-color: #bdbbbb9d;
+    text-align: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12%;
+}
+
+header nav a {
+    display: inline-block;
+    width: 30%;
+    height: 35px;
+    text-align: center;
+    padding-top: 12px;
+
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 22px;
+}
+
+.input-list {
+    max-width: 95%;
+    min-height: 80px;
+    align-items: center;
+    padding: 12px auto 12px auto;
+}
+
+.input-list input,
+.button {
+    border: 2px solid rgb(86, 86, 204);
+    border-radius: 10px;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 18px;
+    padding: 8px 30px;
+}
+
+.input-list .button {
+    box-shadow: 4px 4px 11px grey;
+    background-color: rgb(86, 86, 204, 0.7);
+}
+
+.input-list .button:active {
+    box-shadow: 2px 2px 7px grey;
+    position: relative;
+    left: 2px;
+    top: 2px;
+}
+
+.list-item {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    min-width: 80%;
+    background-color: #faf8f8d2;
+    border-radius: 15px;
+}
+
+.list-item p:first-child {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    font-style: bold;
+}
+
+.list-item p:last-child {
+    text-align: start;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 18px;
+    max-width: 95%;
+    margin-left: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+
+    footer,
+    .content,
+    header {
+        width: 100%
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    footer,
+    .content,
+    header {
+        display: none;
+    }
+}
